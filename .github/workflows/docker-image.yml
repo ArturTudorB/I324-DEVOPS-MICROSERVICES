@@ -2,9 +2,13 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches: [ "develop" ]
+    paths: 
+      - "ms-customers/**"
   pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ "develop" ]
+    paths: 
+      - "ms-customers/**"
 
 jobs:
 
